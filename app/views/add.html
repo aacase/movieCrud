@@ -1,0 +1,45 @@
+<h1>Add New Movie</h1>
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="Title" class="col-sm-2 control-label">Title</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="title" ng-model="movie.title" placeholder="Title" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="genre" class="col-sm-2 control-label">Genre</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="genre" ng-model="movie.genre" placeholder="Genre" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="Actors" class="col-sm-2 control-label">Actors:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="actors" ng-model="movie.actors" placeholder="Actors" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="Year" class="col-sm-2 control-label">Year:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="year" type="number" ng-model="movie.year" placeholder="Year made" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="Rating" class="col-sm-2 control-label">Rating:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="rating" type="number" ng-model="movie.rating" placeholder="Rating out of 5" />
+    </div>
+  </div>
+
+  <div class="form-group">
+
+    <div class="col-sm-offset-2 col-sm-10">
+      <a ng-click="addMovie()" class="btn btn-small btn-primary">Add</a>
+    </div>
+  </div>
+</form>
