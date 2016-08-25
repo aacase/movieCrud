@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name inMotionApp.controller:MainCtrl
+ * @name inMotionApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the inMotionApp
  */
 angular.module('inMotionApp')
-  .controller('MainCtrl', function () {
+  .controller('AddCtrl', function () {
   
   });

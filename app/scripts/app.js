@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name challengesApp
+ * @name inMotionApp
  * @description
- * # challengesApp
+ * # inMotionApp
  *
  * Main module of the application.
  */
 angular
-  .module('challengesApp', [
+  .module('inMotionApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -17,17 +17,21 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
+      .when('/add', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/edit/:id', {
+        controller: 'EditController',
+        templateUrl: 'views/edit.html'
       })
       .otherwise({
         redirectTo: '/'

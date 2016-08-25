@@ -15,7 +15,7 @@
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "challengesApp",
+  "moduleName": "inMotionApp",
   "overrides": {
     "bootstrap": {
       "main": [
