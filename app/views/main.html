@@ -2,7 +2,11 @@
 
 <div class="row">
   <table class="table" >
-    <caption class="lead">My Movie Collection</caption>
+    <caption class="lead">My Movie Collection
+
+    <div><label>Search for a movie   <input ng-model="searchText"></label></div>
+
+    </caption>
     <thead>
       <tr>
         <th>Title</th>
@@ -13,7 +17,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="movie in movies">
+      <tr ng-repeat="movie in movies | filter:searchText">
         <td>{{movie.title}}</td>
         <td>{{movie.genre}}</td>
         <td >{{movie.actors}}</td>
@@ -28,4 +32,6 @@
   <p>
       <a href="#/add" class="btn btn-success" role="button">Add New Movie</a>
   </p>
+
+
 </div>
