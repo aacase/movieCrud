@@ -3,14 +3,14 @@
     "0" : {
       "title" : "The Godfather",
       "year" : "1972",
-      "actors" : ["Marlon Brando Al Pacino James Caan"],
+      "actors" : "Marlon Brando Al Pacino James Caan",
       "genre": "Crime",
       "rating": "5"
     },
     "1" : {
       "title" : "Goodfellas",
       "year" : "1990",
-      "actors" : ["Ray Liotta Robert De Niro Joe Pesci"],
+      "actors" : "Ray Liotta Robert De Niro Joe Pesci",
       "genre": "Crime",
       "rating": "5"
     },
