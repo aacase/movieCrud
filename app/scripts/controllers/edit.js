@@ -11,16 +11,16 @@ angular.module('inMotionApp')
 
 // We're using the $firebaseObject module here because we're only dealing with the object within the array
 
-.controller('EditCtrl', ['$scope','$location', '$routeParams', '$firebaseObject',
-  function($scope, $location, $routeParams, $firebaseObject){
+.controller('EditCtrl', ['$scope', '$location', '$routeParams', '$firebaseObject',
+  function($scope, $location, $routeParams, $firebaseObject) {
 
-  var id = $routeParams.id;
+    var id = $routeParams.id;
 
-  var ref = new Firebase("https://inmotionmovies.firebaseio.com/movies/"+id);
+    var ref = new Firebase("https://inmotionmovies.firebaseio.com/movies/" + id);
 
-  $scope.movie = $firebaseObject(ref);
+    $scope.movie = $firebaseObject(ref);
 
-  $scope.editMovie = function() {
+    $scope.editMovie = function() {
       $scope.movie.$save({
         title: $scope.movie.title,
         genre: $scope.movie.genre,
@@ -31,6 +31,7 @@ angular.module('inMotionApp')
       $scope.edit_form.$setPristine();
       $scope.movie = {};
       $location.path('/');
-  };
+    };
 
-}]);
+  }
+]);
