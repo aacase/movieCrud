@@ -20,12 +20,11 @@
       <tr ng-repeat="movie in movies | filter:searchText">
         <td>{{movie.title}}</td>
         <td>{{movie.genre}}</td>
-        <td >{{movie.actors}}</td>
+        <td>{{movie.actors}}</td>
         <td>{{movie.year}}</td>
         <td>{{movie.rating}}</td>
         <td><a href="#/edit/{{movie.$id}}" class="btn btn-small btn-primary">Edit</a></td>
         <td><a class="btn btn-small btn-danger" ng-click="removeMovie(movie.$id)">Delete</a></td>
-
       </tr>
     </tbody>
   </table>
