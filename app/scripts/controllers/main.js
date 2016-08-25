@@ -12,13 +12,11 @@ angular.module('inMotionApp')
     var ref = new Firebase("https://inmotionmovies.firebaseio.com/movies");
     //bind firebase data to app scope so we can use it on the dom.
     $scope.movies = $firebaseArray(ref);
-    // $scope.actors = $scope.movies.actors
 
-  //delete a movie from the collection. Personally I would never do this
-   $scope.removeMovie = function(id) {
-
-    var ref2 = new Firebase("https://inmotionmovies.firebaseio.com/movies/"+id);
-    var movie = $firebaseObject(ref2)
-    movie.$remove();
-   };
+    //delete a movie from the collection. Personally I would never do this
+    $scope.removeMovie = function(id) {
+      var ref2 = new Firebase("https://inmotionmovies.firebaseio.com/movies/" + id);
+      var movie = $firebaseObject(ref2)
+      movie.$remove();
+    };
   });
