@@ -26,8 +26,8 @@ angular
         controllerAs: 'main'
       })
       .when('/add', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
+        templateUrl: 'views/add.html',
+        controller: 'AddCtrl',
         controllerAs: 'about'
       })
       .when('/edit/:id', {
