@@ -31,7 +31,7 @@ angular
         controllerAs: 'about'
       })
       .when('/edit/:id', {
-        controller: 'EditController',
+        controller: 'EditCtrl',
         templateUrl: 'views/edit.html'
       })
       .otherwise({
