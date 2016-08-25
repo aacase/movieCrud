@@ -1,4 +1,4 @@
-#inMotion Software Coding Challenge
+#InMotion Software Coding Challenge
 
 To install, clone the package and run the following commands
 
