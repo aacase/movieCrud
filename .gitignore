@@ -3,6 +3,9 @@
 #tmp files
 .tmp
 
+#ignore Folders
+dist
+
 ### Bower ###
 bower_components
 .bower-cache
